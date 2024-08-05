@@ -1,0 +1,45 @@
+.navbar {
+    position: fixed;
+    top: 0px;
+
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo {
+    position: fixed;
+    left: 20px;
+    width: 80px;
+}
+
+.avatar {
+    position: fixed;
+    right: 20px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.bg-NAV {
+    background: transparent;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand img:hover {
+    transition: all ease-in-out .5s;
+    width: 100px;
+}
+
+@media (max-width: 600px) {
+    .navbar-brand:where(img) {
+        width: 50px;
+    }
+}
